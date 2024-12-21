@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.row-1 {
+    height: 20%;
+}
+
+.row-2 {
+    height: 20%;
+}
+
+.row-3 {
+    height: 60%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.col {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.col-1-1 {
+    width: 20%;
+    background-color: #D6EFFF;
+}
+
+.col-1-2 {
+    width: 80%;
+    background-color:#D6EFFF;
+}
+
+.col-2-1, .col-2-2, .col-2-3, .col-2-4, .col-2-5 {
+    width: 20%;
+    background-color:#CFECCF;
+}
+.col a{
+    text-decoration: none;
+    color:black
+} 
+.row-3 #target-content {
+    padding: 20px;
+    background-color: white;
+    border: 1px solid black;
+    width: 80%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.row-3::-webkit-scrollbar {
+    width: 8px; /* Customize scrollbar width */
+}
+
+.row-3::-webkit-scrollbar-thumb {
+    background-color: #888; /* Customize scrollbar thumb color */
+    border-radius: 4px;
+}
+
+.row-3::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Darker color on hover */
+}
+.row-3 {
+    height: 60%; /* Maintain the height for the row */
+    overflow-y: auto; /* Allow vertical scrolling if content overflows */
+    padding: 10px; /* Add padding for better appearance */
+    background-color:#2A6FB1; /* Optional: Background for contrast */
+    border: 1px solid black; /* Optional: Add a border */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
+    position: relative; /* Ensure no unexpected layout shifts */
+}
+
+.row-3 div#target-content {
+    max-height: 100%; /* Ensure content stays within the container */
+    overflow-y: auto; /* Enable scrolling for the content itself */
+}
